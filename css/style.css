@@ -76,6 +76,7 @@ body {
 	font-size: 500%;
 	text-shadow: 5px 1px 40px white;
 	z-index: 3;
+	user-select: none;
 }
 .menu {
 	list-style-type: none;
