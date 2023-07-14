@@ -1,0 +1,111 @@
+body {
+	background-color: black;
+	padding: 0;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+.hidden {
+	display: none;
+}
+.background {
+	min-height: 100%;
+	min-width: 1000px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.burger-menu {
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	border: none;
+	background-color: transparent;
+	left: 10px;
+	top: 10px;
+	z-index: 5;
+	cursor: pointer;
+}
+.burger-menu span {
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	background-color: white;
+	left: 5px;
+	transition: transform .5s, opacity .5s, background-color .5s;
+}
+.burger-menu span:nth-child(1) {
+	transform: translateY(-10px);
+}
+.burger-menu span:nth-child(3) {
+	transform: translateY(10px);
+}
+.header.open .menu{
+	transform: translateX(120%);
+}
+.header.open .burger-menu span {
+	background-color: black;
+}
+.header.open .burger-menu span:nth-child(1) {
+	transform: translateY(0) rotate(45deg);
+}
+.header.open .burger-menu span:nth-child(2) {
+	opacity: 0;
+}
+.header.open .burger-menu span:nth-child(3) {
+	transform: translateY(0) rotate(-45deg);
+}
+.clock {
+	color: white;
+	width: 100%;
+	margin: 0;
+	height: 100vh;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-weight: bold;
+	z-index: 2;
+}
+.clock-text {
+	font-size: 500%;
+	text-shadow: 5px 1px 40px white;
+	z-index: 3;
+}
+.menu {
+	list-style-type: none;
+	position: absolute;
+	left: -300px;
+	top: 0;
+	background-color: white;
+	display: block;
+	padding: 55px 20px 10px 20px ;
+	z-index: 4;
+	width: 200px;
+	transition: transform .8s;
+	box-shadow: 3px 5px 10px black;
+}
+.menu-item {
+	margin: 20px 0;
+	color: white;
+	font-size: 22px;
+	display: block;
+	padding: 0 10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.menu-link {
+	color: black;
+	text-decoration: none;
+}
+@media (max-width:640px) {
+	.background {
+		left: 50%;
+		margin-left: -320px;
+	}
+}
