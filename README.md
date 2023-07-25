@@ -1,1 +1,1 @@
-# clock
+# hateq.github.io/clock/
