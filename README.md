@@ -1,1 +1,1 @@
-# hateq.github.io/clock/
+# https://hateq.github.io/clock/
