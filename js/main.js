@@ -13,7 +13,6 @@ menuItems.forEach((item) => {
 		})
 		document.querySelector('#' + item.id + '-img').classList.remove('hidden');
 		document.querySelector('#' + item.id + '-img').classList.add('active');
-		console.log(document.querySelector('.active').id);
 	})
 })
 window.onload = function() {
