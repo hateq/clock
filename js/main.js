@@ -28,6 +28,7 @@ window.onload = function() {
 		if(document.querySelector('.active').id == 'moscow-img') hours = date.getUTCHours() +3;
 		if(document.querySelector('.active').id == 'beijing-img') hours = date.getUTCHours() +8;
 		if(document.querySelector('.active').id == 'tokyo-img') hours = date.getUTCHours() +9;
+		if(hours >= 24) hours = hours -24;
 		if (hours < 10) hours = "0" + hours;
 		if (min < 10) min = "0" + min;
 		if (sec < 10) sec = "0" + sec;
